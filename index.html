@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Navigation</title>
+		<meta http-equiv="content-type" name="keywoeds" content="navigation,导航" charset="UTF-8">
+	</head>
+	<link rel="stylesheet" media="all and (orientation:landscape)" href="nav.css" type="text/css">
+	<link rel="stylesheet" media="all and (orientation:portrait)" href="nav-v.css" type="text/css">
+	<body>
+		<div class="bg">&nbsp;
+			<script type="text/javascript">	<!-- 天气 -->
+				WIDGET = {FID: 'Mqu7PKfYgR'}
+			</script>
+			<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+			
+			<a href="sign in.html" target="blank"><img src="icons/用户.png" height="50px" width="50px" id="loading" alt="登录"/></a>
+			
+			<div class="container">
+				<form action="http://baidu.com/s" method="get" class="parent">
+					<input type="text" class="search shadow" placeholder="百度搜索" name="wd">
+				</form>
+			</div>
+			
+			<article class="blur_box shadow">
+				<div class="rgba"></div><!-- 写在这其实和blur_box:before效果相同，但已经设置过blur_box:before了 -->
+				<div class="content_text">
+					<table cellpadding="10" cellspacing="7">
+						<tr>
+							<td><a href="https://www.baidu.com"><img src="icons/baidu.png" class="icon" alt="百度"/></a></td>
+							<td><a href="https://www.google.com/"><img src="icons/google.png" class="icon" alt="谷歌"/></a></td>
+							<td><a href="https://github.com/"><img src="icons/GitHub.png" class="icon" alt="GitHub"/></a></td>
+							<td><a href="https://bbs.csdn.net/"><img src="icons/csdn.png" class="icon" alt="CSDN"/></a></td>
+						</tr>
+						
+						<tr>
+							<td><a href="https://weibo.com/"><img src="icons/weibo.png" class="icon" alt="微博"/></a></td>
+							<td><a href="https://www.zhihu.com/"><img src="icons/zhihu.png" class="icon" alt="知乎"/></a></td>
+							<td><a href="https://www.taobao.com/"><img src="icons/taobao.png" class="icon" alt="淘宝"/></a></td>
+							<td><a href="https://www.jd.com/"><img src="icons/jd.png" class="icon" alt="京东"/></a></td>
+						</tr>
+					</table>
+				</div>
+			</article>
+			
+			<section class="thanks" id="s_thanks">
+				<img src="icons/心型.png" height="25px" width="25px" alt="感谢"/>感谢
+				<script>
+					var section=document.getElementById("s_thanks");
+					section.onclick=function(){
+						alert("感谢：\n      陈长喜老师提供的教导，匡同学、范同学和秦同学的参考建议，博客园提供的毛玻璃源码，Pexels提供的免费商业图片，百度提供的百度搜索API，阿里巴巴提供的免费图标，中国天气提供的天气JS插件!");
+					}
+				</script>
+			</section>
+		</div>
+	</body>
+</html>
