@@ -49,7 +49,22 @@
 article{
 	width:30%;
 	height:32%;
-	margin:120px auto;
+	margin:60px auto;
+}
+.clock{
+	width:15%;
+	height:10%;
+	margin:60px auto;
+	
+	position: relative;
+}
+.clockword{
+	font-family:黑体;
+	font-size:300%;
+	position:absolute;
+	color: rgba(255, 255, 255, 1);
+	left:8%;
+	top:15%;
 }
 .icon{
 	width:100%;
@@ -59,7 +74,7 @@ article{
 .container {
     height: 47px;
     width: 36%;
-    margin: 150px auto 0 auto;
+    margin: 60px auto 0 auto;
 }
 .parent {
     position: relative;
