@@ -8,15 +8,15 @@
 			}
 			
 			function oClock(){
-			var now=new Date();
-			var hour=(now.getHours()>=10?now.getHours():"0"+now.getHours());
-			var minute=(now.getMinutes()>=10?now.getMinutes():"0"+now.getMinutes());
-			var second=(now.getSeconds()>=10?now.getSeconds():"0"+now.getSeconds());
-			var time=hour+":"+minute+":"+second;
-			clock.innerHTML=time;
-                     }
-                     window.onload=function(){
-			setInterval("oClock()",0);
+				var now=new Date();
+				var hour=(now.getHours()>=10?now.getHours():"0"+now.getHours());
+				var minute=(now.getMinutes()>=10?now.getMinutes():"0"+now.getMinutes());
+				var second=(now.getSeconds()>=10?now.getSeconds():"0"+now.getSeconds());
+				var time=hour+":"+minute+":"+second;
+				clock.innerHTML=time;
+            }
+            window.onload=function(){
+				setInterval("oClock()",0);
 			}
 		</script>
 	</head>
